@@ -1,0 +1,12 @@
+# Python / Django
+.venv/
+__pycache__/
+*.py[cod]
+.env
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Note: frontend/ has its own .gitignore (node_modules, dist, etc.)

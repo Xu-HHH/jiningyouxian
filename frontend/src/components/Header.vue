@@ -15,6 +15,14 @@ const links = [
   { label: '政策文件', href: '#features' },
   { label: '关于企业', href: '#features' }
 ]
+
+// Smoothly scroll to the top of the home page when the home nav link is clicked
+const onNavClick = (e, href) => {
+  if (href === '#home') {
+    e.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+}
 </script>
 
 <template>
@@ -25,7 +33,7 @@ const links = [
       </a>
 
       <nav class="nav-desktop" :class="{ hidden: menuOpen }">
-        <a v-for="l in links" :key="l.label" :href="l.href" class="nav-link">
+        <a v-for="l in links" :key="l.label" :href="l.href" class="nav-link" @click="onNavClick($event, l.href)">
           {{ l.label }}
         </a>
       </nav>
@@ -47,7 +55,7 @@ const links = [
 
     <transition name="fade">
       <div v-if="menuOpen" class="mobile-menu" @click="emit('toggle')">
-        <a v-for="l in links" :key="l.label" :href="l.href" class="mobile-link" @click.stop="emit('toggle')">
+        <a v-for="l in links" :key="l.label" :href="l.href" class="mobile-link" @click.stop="onNavClick($event, l.href); emit('toggle')">
           {{ l.label }}
         </a>
       </div>

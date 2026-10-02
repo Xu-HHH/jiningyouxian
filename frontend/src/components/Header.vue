@@ -7,13 +7,22 @@ defineProps({
 
 const emit = defineEmits(['toggle'])
 
+const isSubPage = ['TV.html', 'SIM.html', 'ronghe.html', 'zhengce.html', 'guanyu.html'].some((s) => window.location.pathname.includes(s))
+const homeHref = isSubPage ? 'index.html' : '#home'
+// On the SIM page itself, the 5G link just scrolls back to the top
+const simHref = window.location.pathname.includes('SIM.html') ? '#home' : 'SIM.html'
+// On the ronghe page itself, the link just scrolls back to the top
+const rongheHref = window.location.pathname.includes('ronghe.html') ? '#home' : 'ronghe.html'
+const zhengceHref = window.location.pathname.includes('zhengce.html') ? '#home' : 'zhengce.html'
+const guanyuHref = window.location.pathname.includes('guanyu.html') ? '#home' : 'guanyu.html'
+
 const links = [
-  { label: '山东有线', href: '#home' },
-  { label: '有线电视套餐', href: '#features' },
-  { label: '5G', href: '#features' },
-  { label: '融合套餐', href: '#features' },
-  { label: '政策文件', href: '#features' },
-  { label: '关于企业', href: '#features' }
+  { label: '山东有线', href: homeHref },
+  { label: '有线电视套餐', href: 'TV.html' },
+  { label: '5G', href: simHref },
+  { label: '融合套餐', href: rongheHref },
+  { label: '政策文件', href: zhengceHref },
+  { label: '关于企业', href: guanyuHref }
 ]
 
 // Smoothly scroll to the top of the home page when the home nav link is clicked
@@ -28,7 +37,7 @@ const onNavClick = (e, href) => {
 <template>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="#home" @click.stop="emit('toggle')">
+      <a class="logo" :href="homeHref" @click.stop="emit('toggle')">
         <img :src="logoSd" alt="山东有线 SHANDONG CABLE" class="logo-img" />
       </a>
 

@@ -9,8 +9,10 @@
       loop
       playsinline
       preload="auto"
-      src="/hero.mp4"
-    ></video>
+    >
+      <source src="hero.mp4" type="video/mp4" />
+      <source src="https://jiningyouxian.netlify.app/hero.mp4" type="video/mp4" />
+    </video>
 
     <div class="hero-overlay" aria-hidden="true"></div>
 

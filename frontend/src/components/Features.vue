@@ -4,26 +4,26 @@ const features = [
     title: '微插机顶盒',
     desc: '小身材藏着大用处。',
     icon: 'library',
-    img: '/stick-box.jpeg'
+    img: 'stick-box.jpeg'
   },
   {
     title: '4K超高清智能终端产品——享TV',
     desc: '享TV，“享”您所想。',
     icon: 'bolt',
-    img: '/xiang-tv.jpeg',
+    img: 'xiang-tv.jpeg',
     imgClass: 'card-img--fit'
   },
   {
     title: '广电宽带',
     desc: '广电宽带，稳定畅快还实惠。',
     icon: 'book',
-    img: '/guangdian-bb.jpeg'
+    img: 'guangdian-bb.jpeg'
   },
   {
     title: '广电崇军卡',
     descHtml: '齐鲁崇军行，广电暖兵心，崇军卡享专属<span class="hl-red">1927</span>红色号段',
     icon: 'camera',
-    img: '/chongjun-card.gif',
+    img: 'chongjun-card.gif',
     imgClass: 'card-img--square'
   }
 ]
@@ -58,7 +58,7 @@ const icons = {
           <p class="card-desc">{{ features[0].desc }}</p>
         </article>
         <div class="mini-box">
-          <img src="/guangdian-sim.jpeg" alt="广电5G号卡" class="mini-box-img" />
+          <img src="guangdian-sim.jpeg" alt="广电5G号卡" class="mini-box-img" />
           <h3 class="card-title">广电5G号卡</h3>
           <p class="card-desc">固移融合，慧享全家。</p>
         </div>

@@ -2,7 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 // Cross-fading hero background photos (each shown for about 5s)
-const bgs = ['/tv-photo-1.png', '/tv-photo-2.png', '/tv-photo-3.png', '/tv-photo-4.png']
+const bgs = ['tv-photo-1.png', 'tv-photo-2.png', 'tv-photo-3.png', 'tv-photo-4.png']
 const active = ref(0)
 let timer = null
 onMounted(() => {
@@ -66,7 +66,7 @@ onUnmounted(() => {
       </div>
       <div class="tv-video-wrap" :class="{ open: videoOpen }">
         <video ref="videoEl" class="tv-video-el" controls loop playsinline preload="metadata" muted>
-          <source src="/x-tv-video.mp4" type="video/mp4" />
+          <source src="x-tv-video.mp4" type="video/mp4" />
         </video>
       </div>
     </section>

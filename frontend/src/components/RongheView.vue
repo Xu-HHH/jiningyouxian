@@ -38,7 +38,7 @@
       <p class="ronghe-desc">融合套餐页面正在精心筹备，稍后与您见面，敬请期待。</p>
       <div class="ronghe-progress"><div class="ronghe-progress-bar"></div></div>
       <a class="ronghe-btn" href="index.html">返回首页</a>
-      <div class="ronghe-photo"><img src="/site-photo.png" alt="济宁有线" /></div>
+      <div class="ronghe-photo"><img src="site-photo.png" alt="济宁有线" /></div>
     </div>
   </section>
 </template>

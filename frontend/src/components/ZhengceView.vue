@@ -36,7 +36,7 @@
       <p class="zhengce-eyebrow">COMING SOON</p>
       <h1 class="zhengce-title">页面装修中</h1>
       <p class="zhengce-desc">政策文件页面正在精心筹备，稍后与您见面，敬请期待。</p>
-      <div class="zhengce-photo"><img src="/site-photo.png" alt="政策文件配图" /></div>
+      <div class="zhengce-photo"><img src="site-photo.png" alt="政策文件配图" /></div>
       <div class="zhengce-progress"><div class="zhengce-progress-bar"></div></div>
       <a class="zhengce-btn" href="index.html">返回首页</a>
     </div>

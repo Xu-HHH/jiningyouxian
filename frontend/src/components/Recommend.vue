@@ -2,12 +2,12 @@
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 
 const videos = [
-  { src: '/videos/v1.mp4', label: '视频1' },
-  { src: '/videos/v2.mp4', label: '视频2' },
-  { src: '/videos/v3.mp4', label: '视频3' },
-  { src: '/videos/v4.mp4', label: '视频4' },
-  { src: '/videos/v5.mp4', label: '视频5' },
-  { src: '/videos/v6.mp4', label: '视频6' }
+  { src: 'videos/v1.mp4', label: '视频1' },
+  { src: 'videos/v2.mp4', label: '视频2' },
+  { src: 'videos/v3.mp4', label: '视频3' },
+  { src: 'videos/v4.mp4', label: '视频4' },
+  { src: 'videos/v5.mp4', label: '视频5' },
+  { src: 'videos/v6.mp4', label: '视频6' }
 ]
 
 const total = videos.length

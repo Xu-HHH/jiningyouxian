@@ -82,8 +82,8 @@ const scrollTo = (id) => {
         <div class="sim-hero-card">
           <div class="sim-card3d-wrap">
             <div class="sim-card3d" :style="cardStyle" @pointerdown="onCardPointerDown" title="按住拖动，翻转查看卡背">
-              <div class="sim-face sim-face-front"><img src="/sim2.png" alt="广电5G号卡正面" draggable="false"></div>
-              <div class="sim-face sim-face-back"><img src="/sim1.png" alt="广电5G号卡背面" draggable="false"></div>
+              <div class="sim-face sim-face-front"><img src="sim2.png" alt="广电5G号卡正面" draggable="false"></div>
+              <div class="sim-face sim-face-back"><img src="sim1.png" alt="广电5G号卡背面" draggable="false"></div>
             </div>
           </div>
           <p class="sim-card-hint">按住卡片拖动，可立体翻转查看卡背</p>
